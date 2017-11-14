@@ -5,10 +5,8 @@ PROJECT_NAME='serp'
 
 echo
 echo '-- infrastructure'
-./infrastructure.sh -p infra $@
-
-sleep 3s
+./infrastructure.sh $@
 
 echo
 echo '-- core'
-./core.sh -p core $@
+./core.sh $@
