@@ -1,7 +1,14 @@
 #!/bin/bash
 
-./infrastructure.sh $@
+# cd to script dir
+PROJECT_NAME='serp'
 
-sleep 3
+echo
+echo '-- infrastructure'
+./infrastructure.sh -p infra $@
 
-./serp.sh $@
+sleep 3s
+
+echo
+echo '-- core'
+./core.sh -p core $@
