@@ -1,0 +1,11 @@
+version: '2'
+
+services:  
+  serp-api:
+    image: serp-api:1.0.0
+    ports:
+      - 3000:3000
+    environment:
+      MYSQL_USERNAME: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: serp
